@@ -1,11 +1,10 @@
 ﻿Feature: NavigateToHomepage
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	In order to begin shopping
+	As a user
+	I want to be navigate to the HomePage
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: Navigate to HomePage
+	Given I have a working computer and connection
+	When I enter the HomePage url
+	Then I am redirected to the HomePage

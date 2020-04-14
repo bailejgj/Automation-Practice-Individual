@@ -1,11 +1,10 @@
-﻿Feature: NavigateToSignIn
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+﻿Feature: NavigateToLogin
+	In order to enjoy a personal experience
+	As a user
+	I want to be told navigate to the signin page
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: Navigate to SignIn
+	Given I am on the HomePage
+	When I press signin
+	Then I am redirected to the SignIn

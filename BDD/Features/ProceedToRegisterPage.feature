@@ -1,11 +1,11 @@
 ﻿Feature: ProceedToRegisterPage
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	To get a personal experience
+	As a user
+	I want to register an account
 
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: ProceedToRegisterPageWithValidEmail
+	Given I am on the SignInPage
+	And I have entered a valid email address
+	When I click create account
+	Then I am redirected to the RegisterPage

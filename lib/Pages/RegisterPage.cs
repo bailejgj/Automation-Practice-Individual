@@ -9,6 +9,7 @@ namespace AutomationPractice.lib.pages
 
         private IWebDriver _driver;
         private string _loginPageUrl = AppConfigReader.LoginUrl;
+        private IWebElement checkRegisterPage => this._driver.FindElement(By.ClassName("page-heading"));
         private IWebElement selectMale => this._driver.FindElement(By.Id("id_gender1"));
         private IWebElement selectFemale => this._driver.FindElement(By.Id("id_gender2"));
         private IWebElement enterFName => this._driver.FindElement(By.Id("customer_firstname"));
@@ -37,6 +38,10 @@ namespace AutomationPractice.lib.pages
         public RegisterPage(IWebDriver driver)
         {
             _driver = driver;
+        }
+        public string CheckCurrentPage()
+        {
+            return checkRegisterPage.ToString();
         }
         public void SelectMale()
         {

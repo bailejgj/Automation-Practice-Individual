@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutomationPractice.lib;
+using System;
 using TechTalk.SpecFlow;
 
 namespace AutomationPractice.BDD.SteppingFunctions
@@ -6,16 +7,17 @@ namespace AutomationPractice.BDD.SteppingFunctions
     [Binding]
     public class NavigateToLoginSteps
     {
+        private AutomationPracticeWebsite _automation;
         [Given(@"I am on the HomePage")]
         public void GivenIAmOnTheHomePage()
         {
-            ScenarioContext.Current.Pending();
+            _automation.APHome.VisitHomePage();
         }
         
         [When(@"I press signin")]
         public void WhenIPressSignin()
         {
-            ScenarioContext.Current.Pending();
+            _automation.APHome.ClickSignInLink();
         }
         
         [Then(@"I am redirected to the SignIn")]
