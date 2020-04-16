@@ -34,6 +34,7 @@ namespace AutomationPractice.lib.pages
         private IWebElement enterMobilePhone => this._driver.FindElement(By.Id("phone_mobile"));
         private IWebElement enterAlias => this._driver.FindElement(By.Id("alias"));
         private IWebElement submitAccount => this._driver.FindElement(By.Id("submitAccount"));
+        private IWebElement errorMessage => this._driver.FindElement(By.ClassName("alert alert-danger"));
 
         public RegisterPage(IWebDriver driver)
         {
@@ -149,6 +150,10 @@ namespace AutomationPractice.lib.pages
         public void EnterRegistration()
         {
             submitAccount.Click();
+        }
+        public string ReadError()
+        {
+            return errorMessage.Text.ToString();
         }
     }
 }

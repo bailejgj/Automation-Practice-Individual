@@ -127,6 +127,7 @@
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="BDD\SteppingFunctions\HomePageSteps\NavigateToHomepageSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\RegistrationPageSteps\CompleteRegistrationStepsSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\RegistrationPageSteps\RegisterEmptyFormSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\SignInPageSteps\NavigateToLoginSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\SignInPageSteps\ProceedToRegisterPageErrorSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\SignInPageSteps\ProceedToRegisterPageSteps.cs" />
@@ -150,6 +151,7 @@
     <None Include="App.config" />
     <None Include="BDD\Features\HomePageFeatures\NavigateToHomepage.feature" />
     <None Include="BDD\Features\RegistrationPageFeatures\CompleteRegistrationSteps.feature" />
+    <None Include="BDD\Features\RegistrationPageFeatures\RegisterEmptyForm.feature" />
     <None Include="BDD\Features\SignInPageFeatures\NavigateToSignIn.feature" />
     <None Include="BDD\Features\SignInPageFeatures\ProceedToRegisterPageError.feature" />
     <None Include="BDD\Features\SignInPageFeatures\ProceedToRegisterPage.feature" />

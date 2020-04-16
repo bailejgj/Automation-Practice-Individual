@@ -1,6 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using AutomationPractice.lib;
+using AutomationPractice.lib.pages;
 using NUnit.Framework;
 
 namespace AutomationPractice.BDD.SteppingFunctions
