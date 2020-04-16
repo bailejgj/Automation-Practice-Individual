@@ -125,10 +125,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
-    <Compile Include="BDD\SteppingFunctions\NavigateToHomepageSteps.cs" />
-    <Compile Include="BDD\SteppingFunctions\NavigateToLoginSteps.cs" />
-    <Compile Include="BDD\SteppingFunctions\ProceedToRegisterPageErrorSteps.cs" />
-    <Compile Include="BDD\SteppingFunctions\ProceedToRegisterPageSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\HomePageSteps\NavigateToHomepageSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\RegistrationPageSteps\CompleteRegistrationStepsSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\SignInPageSteps\NavigateToLoginSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\SignInPageSteps\ProceedToRegisterPageErrorSteps.cs" />
+    <Compile Include="BDD\SteppingFunctions\SignInPageSteps\ProceedToRegisterPageSteps.cs" />
     <Compile Include="lib\AutomationPracticeWebsite.cs" />
     <Compile Include="lib\driver_config\SeleniumDriverConfig.cs" />
     <Compile Include="lib\Pages\BasketPage.cs" />
@@ -147,10 +148,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="BDD\Features\NavigateToHomepage.feature" />
-    <None Include="BDD\Features\NavigateToSignIn.feature" />
-    <None Include="BDD\Features\ProceedToRegisterPageError.feature" />
-    <None Include="BDD\Features\ProceedToRegisterPage.feature" />
+    <None Include="BDD\Features\HomePageFeatures\NavigateToHomepage.feature" />
+    <None Include="BDD\Features\RegistrationPageFeatures\CompleteRegistrationSteps.feature" />
+    <None Include="BDD\Features\SignInPageFeatures\NavigateToSignIn.feature" />
+    <None Include="BDD\Features\SignInPageFeatures\ProceedToRegisterPageError.feature" />
+    <None Include="BDD\Features\SignInPageFeatures\ProceedToRegisterPage.feature" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

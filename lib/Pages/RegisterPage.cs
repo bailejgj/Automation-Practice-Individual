@@ -43,6 +43,20 @@ namespace AutomationPractice.lib.pages
         {
             return checkRegisterPage.ToString();
         }
+        //This method fills the 8 vital fields (Firstname, lastname, password, phone, address1, city, postcode and state)
+        public void FillNonSensitiveFields()
+        {
+            selectMale.Click();
+            enterFName.SendKeys("John");
+            enterLName.SendKeys("Smith");
+            enterPassword.SendKeys("Password");
+            enterHomePhone.SendKeys("123456");
+            enterAddress1.SendKeys("address");
+            enterCity.SendKeys("city");
+            selectState.SendKeys("Alabama");
+            selectState.Submit();
+            enterPostcode.SendKeys("00000");
+        }
         public void SelectMale()
         {
             selectMale.Click();

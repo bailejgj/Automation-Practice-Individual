@@ -1,6 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using AutomationPractice.lib;
+using NUnit.Framework;
 
 namespace AutomationPractice.BDD.SteppingFunctions
 {
@@ -11,19 +12,18 @@ namespace AutomationPractice.BDD.SteppingFunctions
         [Given(@"I am on the SigInPage")]
         public void GivenIAmOnTheSigInPage()
         {
-            ScenarioContext.Current.Pending();
+            _automation.APSignIn.VisitLoginPage();
         }
-        
-        [Given(@"I have entered an email without an at sign")]
-        public void GivenIHaveEnteredAnEmailWithoutAnAtSign()
+        [When(@"I submit an invalid email")]
+        public void WhenISubmitAnInvalidEmail()
         {
-            ScenarioContext.Current.Pending();
+            _automation.APSignIn.EnterREmail("abc.abcdw");
         }
-        
         [Then(@"I am given the error ""(.*)""")]
-        public void ThenIAmGivenTheError(string p0)
+        public void ThenIAmGivenTheError()
         {
-            ScenarioContext.Current.Pending();
+            Assert.That(_automation.APSignIn.ReadError(),
+                Is.EqualTo("CREATE AN ACCOUNT"));
         }
     }
 }
