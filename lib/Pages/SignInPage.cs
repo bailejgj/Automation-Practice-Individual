@@ -25,6 +25,12 @@ namespace AutomationPractice.lib.pages
             _driver.Navigate().GoToUrl(_loginUrl);
         }
         //For Logging in
+        public void FullLogin()
+        {
+            EnterValidEmail("mitclork@mitclork.com");
+            EnterValidPassword("mitclork");
+            ConfirmationButton();
+        }
         public void EnterValidEmail(string email)
         {
             _usernameField.SendKeys(email);

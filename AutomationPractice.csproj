@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
+    <Compile Include="BDD\SteppingFunctions\AddressPageSteps\AddingANewAddressSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\HomePageSteps\NavigateToHomepageSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\RegistrationPageSteps\CompleteRegistrationStepsSteps.cs" />
     <Compile Include="BDD\SteppingFunctions\RegistrationPageSteps\RegisterEmptyFormSteps.cs" />
@@ -150,6 +151,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="BDD\Features\HomePageFeatures\NavigateToHomepage.feature" />
+    <None Include="BDD\Features\AddressPageFeatures\AddingANewAddress.feature" />
     <None Include="BDD\Features\RegistrationPageFeatures\CompleteRegistrationSteps.feature" />
     <None Include="BDD\Features\RegistrationPageFeatures\RegisterEmptyForm.feature" />
     <None Include="BDD\Features\SignInPageFeatures\NavigateToSignIn.feature" />

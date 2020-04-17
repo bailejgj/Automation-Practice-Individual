@@ -7,6 +7,7 @@ namespace AutomationPractice.lib.pages
         private IWebDriver _driver;
         private IWebElement _searchBar => this._driver.FindElement(By.Id("search_query_top"));
         private IWebElement checkMyAccountPage => this._driver.FindElement(By.ClassName("page-heading"));
+        private IWebElement addressPageLink => this._driver.FindElement(By.PartialLinkText("http://automationpractice.com/index.php?controller=addresses"));
 
         public MyAccountPage(IWebDriver driver)
         {
@@ -22,6 +23,9 @@ namespace AutomationPractice.lib.pages
         {
             return checkMyAccountPage.Text.ToString();
         }
-
+        public void NavigateToAddress()
+        {
+            addressPageLink.Click();
+        }
     }
 }
